@@ -1355,7 +1355,7 @@ header .header-logo a {
   line-height: 1.6;
   padding: 3.6rem 3rem;
   height: 100%;
-  width: 240px;
+  width: 320px;
   position: fixed;
   right: 0;
   top: 0;
@@ -1382,7 +1382,7 @@ header .header-logo a {
 #menu-nav-wrap h3 {
   color: white;
   font-family: "montserrat-regular", sans-serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1.5;
   margin-bottom: 1.5rem;
 }
@@ -1395,11 +1395,11 @@ header .header-logo a {
 }
 #menu-nav-wrap .nav-list li {
   padding-left: 0;
-  border-bottom: 1px dotted rgba(255, 255, 255, 0.03);
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.08);
   line-height: 4.2rem;
 }
 #menu-nav-wrap .nav-list li:first-child {
-  border-top: 1px dotted rgba(255, 255, 255, 0.03);
+  border-top: 1px dotted rgba(255, 255, 255, 0.08);
 }
 #menu-nav-wrap .nav-list li a {
   color: rgba(255, 255, 255, 0.25);
@@ -1509,7 +1509,7 @@ header .header-logo a {
   width: 100%;
   height: 100%;
   background-color: #151515;
-  background-image: url(../images/hero-bg.jpg);
+  background-image: url(../images/bg-home.jpg);
   background-repeat: no-repeat;
   background-position: center 30%;
   -webkit-background-size: cover;
@@ -1790,13 +1790,13 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   max-width: 850px;
 }
 #about span {
-  color: #07617d;
+  color: #2e383f;
 }
 #about h3 {
   font-family: "montserrat-bold", sans-serif;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   line-height: 1.667;
-  color: #07617d;
+  color: #2e383f;
   text-transform: uppercase;
   letter-spacing: .3rem;
   position: relative;
@@ -1812,10 +1812,11 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 #about .lead {
   font-family: "librebaskerville-bold", sans-serif;
   font-size: 2rem;
-  line-height: 1.8;
+  line-height: 1.7;
   color: #2e383f;
   margin-top: 1rem;
   text-align: justify;
+  
 }
 
 /* ------------------------------------------------------------------- 
@@ -2014,18 +2015,40 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   position: relative;
   padding: 0;
 }
+
 #portfolio .intro-wrap {
   padding: 15rem 0 21rem;
-  background: #111111;
+  background-color: #151515;
+  background-image: url(../images/bg-uncukul.jpg);
+  background-repeat: no-repeat;
+  background-position: center 30%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
 }
 #portfolio .section-intro h3 {
-  color: rgba(242, 242, 242, 0.5);
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Ubuntu';
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2rem;
 }
 #portfolio .section-intro h1 {
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  font-style: normal;
+  font-size: 3.5rem;
+  line-height: 1.133;
+  text-transform: uppercase;
   color: #FFFFFF;
 }
 #portfolio .section-intro .lead {
-  color: rgba(242, 242, 242, 0.4);
+  color: rgba(255, 255, 255, 0.9);
+  font-family: "librebaskerville-bold", sans-serif;
+  font-size: 2rem;
+  line-height: 1.7;
+  margin-top: 1rem;
   text-align: justify;
 }
 #portfolio .portfolio-content {
@@ -2251,6 +2274,10 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 @media only screen and (max-width: 768px) {
   #portfolio .intro-wrap {
     padding: 12rem 0 21rem;
+    background-color: #19191b;
+    background-image: url(../images/bg-uncukul.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 @media only screen and (max-width: 600px) {
