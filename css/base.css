@@ -341,8 +341,8 @@ textarea {
  * ------------------------------------------------------------------- */
  .rowcontent {
   width: 100%;
-  max-width: 1170px;
-  margin: 0 auto;
+  max-width: 1300px;
+  margin: 0;
  }
  .rowcontent:before, .rowcontent:after {
   content: "";
@@ -351,7 +351,6 @@ textarea {
  .rowcontent:after {
   clear: both;
 }
-
 
 
  .row {
