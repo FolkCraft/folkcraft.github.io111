@@ -1781,17 +1781,24 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  * ------------------------------------------------------------------- */
 #about {
   position: relative;
-  padding: 4.2rem 0 12rem;
+  padding: 3rem 0 7rem;
   background-color: #FFFFFF;
   min-height: 696px;
   text-align: center;
 }
+
+.about-border{
+  border-bottom: 5px dotted rgba(0, 0, 0, 0.5);
+}
+
 #about .about-wrap {
   max-width: 850px;
 }
+
 #about span {
   color: #2e383f;
 }
+
 #about h3 {
   font-family: "montserrat-bold", sans-serif;
   font-size: 2.5rem;

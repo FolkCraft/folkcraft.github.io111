@@ -3,6 +3,7 @@
 	margin: 0 auto;
 	list-style: none;
 	text-align: center;
+	color: white;
 }
 
 /* Common style */
@@ -24,8 +25,7 @@
 }
 
 .grid figure figcaption {
-	padding: 2em;
-	color: #fff;
+	padding: auto;
 	text-transform: uppercase;
 	font-size: 1.25em;
 	-webkit-backface-visibility: hidden;
@@ -44,6 +44,10 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+.grid figure figcaption > h2 {
+	color: white;
 }
 
 /* Anchor will cover the whole item by default */
