@@ -56,7 +56,7 @@
 
 		<nav id="menu-nav-wrap">
 
-			<a href="#0" class="close-button" title="close"><span>Close</span></a>	
+			<a href="#0" class="close-button" title="зыкрыть"><span>Закрыть</span></a>	
 
 	   	<h3>Содержание</h3>  
 
@@ -70,7 +70,7 @@
 							<li><a class="smoothscroll" href="#portfolio" title="">Изделия гоцатлинских мастеров</a></li>
 							<li><a class="smoothscroll" href="#portfolio" title="">Балхарская керамика</a></li>
 							<li><a class="smoothscroll" href="#portfolio" title="">Сулевкентская керамика</a></li>
-							<li><a class="smoothscroll" href="#portfolio" title="">Кайтагская керамика</a></li>
+							<li><a class="smoothscroll" href="#portfolio" title="">Кайтагская вышивка</a></li>
 							<li><a class="smoothscroll" href="#portfolio" title="">Дагестанские ковры</a></li>
 							<li><a class="smoothscroll" href="#portfolio" title="">Ботлихские бурки</a></li>
 							<li><a class="smoothscroll" href="#portfolio" title="">Реестр предприятий</a></li>
@@ -109,13 +109,12 @@
 		   		<div class="col-twelve">		   			
 			  		
 			  				<h3 class="animate-intro">
-								ГАУ РД "Центр поддержки предпринимательства республики Дагестан"<br>
-								Центр народных художественных промыслов
+								Фонд социальных и благотворительных проектов "ПосетиКавказ"<br>
+								Центр народных художественных промыслов Северного Кавказа
 
 							</h3>
 				  			<h1 class="animate-intro">
-							Народные художественные <br>
-							промыслы Дагестана
+							Каталог изделий народных художественных промыслов Северного Кавказа
 				  			</h1>	
 
 				  			<div class="more animate-intro">
@@ -154,7 +153,13 @@
    <!-- about
    ================================================== -->
    <section id="about">
-
+		<div>
+		<ul>
+			<?php for($i=1;$i<=5;$i++){ ?>
+			<li>Menu Item <?php echo $i; ?></li> 
+			<?php } ?>
+		</ul> 
+		</div>
    	<div class="row about-wrap">
    		<div class="col-full">
 
@@ -168,7 +173,7 @@
 						Богатство художественных традиций народных промыслов, их разнообразие обусловлены особенностями его исторического развития.
 						<br>
 						Разделяемый большим кавказским хребтом Дагестан лежит на границе Европы и Азии. Археологический материал показывает, что здесь пришли в соприкосновение значительные культурные явления, относящиеся к цивилизациям древнего Средиземноморья, западной, центральной и восточной Европы, с одной стороны, и развитые культуры различных регионов Азии — с другой. В сочетании со своеобразными художественными традициями древнего населения Кавказа они образовали сложнейший и многообразнейший художественный конгломерат, который получил плодотворное развитие в творчестве народных мастеров последующих столетий.
-						<br>	
+						<br>
 						Важнейшей особенностью художественной культуры Дагестана, наряду с богатством лежащих в ее основе традиций, разнообразием присутствующих в ней видов, является необычайно широкое проявление творческой активности и творческой одаренности народных масс в сфере народных художественных промыслов.
 						<br>
 						Недаром Дагестан издавна известен как страна многообразных и высокоразвитых художественных промыслов, Страна мастеров. Народные художественные промыслы здесь — ярчайшее ожерелье из прекрасных самоцветных камней.
@@ -205,82 +210,79 @@
 		<h1>Разделы</h1>
 		<div class="rowcontent">
 			<div id="works" class=" clearfix grid">
-				<figure class="effect-oscar  wowload fadeIn">
-					<img src="images/portfolio/1.jpg" alt="img01"/>
+				<figure class="effect-bubba  wowload fadeIn">
+					<img src="images/portfolio/uncukul.jpg" alt="img01"/>
 					<figcaption>
 						<h2>Изделия унцукульских мастеров</h2>
-						<p>Тут должно быть описание<br>
-						<a href="#portfolio" title="1" data-gallery>View more</a></p>            
+						<p><a href="#portfolio" title="1" data-gallery>Подробнее</a></p>            
 					</figcaption>
 				</figure>
-				<figure class="effect-oscar  wowload fadeInUp">
-					<img src="images/portfolio/2.jpg" alt="img01"/>
+
+				<figure class="effect-bubba  wowload fadeInUp">
+					<img src="images/portfolio/kubachin.jpg" alt="img01"/>
 					<figcaption>
 						<h2>Изделия кубачинских мастеров</h2>
-						<p>Тут должно быть описание<br>
-						<a href="images/portfolio/2.jpg" title="1" data-gallery>View more</a></p>            
+						<p><a href="images/portfolio/2.jpg" title="1" data-gallery>Подробнее</a></p>            
 					</figcaption>
 				</figure>
-				<figure class="effect-oscar  wowload fadeInUp">
-					<img src="images/portfolio/3.jpg" alt="img01"/>
+
+				<figure class="effect-bubba  wowload fadeInUp">
+					<img src="images/portfolio/gozatlin.jpg" alt="img01"/>
 					<figcaption>
 						<h2>Изделия гоцатлинских мастеров</h2>
-						<p>Тут должно быть описание<br>
-						<a href="images/portfolio/3.jpg" title="1" data-gallery>View more</a></p>            
+						<p><a href="images/portfolio/3.jpg" title="1" data-gallery>Подробнее</a></p>            
 					</figcaption>
 				</figure>
-				<figure class="effect-oscar  wowload fadeInUp">
-					<img src="images/portfolio/4.jpg" alt="img01"/>
+
+				<figure class="effect-bubba  wowload fadeInUp">
+					<img src="images/portfolio/balhar.jpg" alt="img01"/>
 					<figcaption>
 						<h2>Балхарская керамика</h2>
-						<p>Тут должно быть описание<br>
-						<a href="images/portfolio/4.jpg" title="1" data-gallery>View more</a></p>            
+						<p><a href="images/portfolio/4.jpg" title="1" data-gallery>Подробнее</a></p>            
 					</figcaption>
 				</figure>
-				<figure class="effect-oscar  wowload fadeInUp">
-					<img src="images/portfolio/5.jpg" alt="img01"/>
+
+				<figure class="effect-bubba  wowload fadeInUp">
+					<img src="images/portfolio/sulevkent.jpg" alt="img01"/>
 					<figcaption>
 						<h2>Сулевкентская керамика</h2>
-						<p>Тут должно быть описание<br>
-						<a href="images/portfolio/5.jpg" title="1" data-gallery>View more</a></p>            
+						<p><a href="images/portfolio/sulevkent.jpg" title="1" data-gallery>Подробнее</a></p>            
 					</figcaption>
 				</figure>
 				
-				<figure class="effect-oscar  wowload fadeInUp">
-					<img src="images/portfolio/6.jpg" alt="img01"/>
+				<figure class="effect-bubba  wowload fadeInUp">
+					<img src="images/portfolio/kaitag.jpg" alt="img01"/>
 					<figcaption>
-						<h2>Кайтагская керамика</h2>
-						<p>Тут должно быть описание<br>
-						<a href="images/portfolio/6.jpg" title="1" data-gallery>View more</a></p>            
+						<h2>Кайтагская вышивка</h2>
+						<p><a href="images/portfolio/6.jpg" title="1" data-gallery>Подробнее</a></p>            
 					</figcaption>
 				</figure>
-				<figure class="effect-oscar  wowload fadeInUp">
-					<img src="images/portfolio/7.jpg" alt="img01"/>
+
+				<figure class="effect-bubba  wowload fadeInUp">
+					<img src="images/portfolio/dag.jpg" alt="img01"/>
 					<figcaption>
 						<h2>Дагестанские ковры</h2>
-						<p>Тут должно быть описание<br>
-						<a href="images/portfolio/7.jpg" title="1" data-gallery>View more</a></p>            
+						<p><a href="images/portfolio/7.jpg" title="1" data-gallery>Подробнее</a></p>            
 					</figcaption>
 				</figure>
-				<figure class="effect-oscar  wowload fadeInUp">
-					<img src="images/portfolio/8.jpg" alt="img01"/>
+
+				<figure class="effect-bubba  wowload fadeInUp">
+					<img src="images/portfolio/botlih.jpg" alt="img01"/>
 					<figcaption>
 						<h2>Ботлихские бурки</h2>
-						<p>Тут должно быть описание<br>
-						<a href="images/portfolio/8.jpg" title="1" data-gallery>View more</a></p>            
+						<p><a href="images/portfolio/8.jpg" title="1" data-gallery>Подробнее</a></p>            
 					</figcaption>
 				</figure>
-				<figure class="effect-oscar  wowload fadeInUp">
-					<img src="images/portfolio/9.jpg" alt="img01"/>
+
+				<figure class="effect-bubba  wowload fadeInUp">
+					<img src="images/portfolio/reestr.jpg" alt="img01"/>
 					<figcaption>
 						<h2>Реестр предприятий</h2>
-						<p>
-							Тут должно быть описание<br>
-							<a href="images/portfolio/9.jpg" title="1" data-gallery>View more</a>
-						</p>           
+						<p><a href="images/portfolio/9.jpg" title="1" data-gallery>Подробнее</a></p>           
 					</figcaption>
 				</figure>
 			</div>
+			<div>&nbsp</div>
 		</div>
    </section> <!-- end clients -->
 
@@ -293,7 +295,7 @@
    	<div class="intro-wrap">
 
    		<div class="row narrow section-intro with-bottom-sep animate-this">
-	   		<div class="col-twelve">
+	   		<div class="col-twelve" id = "lead_portfolio">
 	   			<h3>Народные художественные промыслы Дагестана</h3>
 		   		<h1>Изделия Унцукульских мастеров</h1>  			
 		   		
@@ -309,15 +311,16 @@
 					В арсенале унцукульских мастеров: трости, курительные трубки, блюда, декоративные вазы, панно, кувшины, наборы для вина, журнальные столики, письменные приборы, кинжалы, подсвечники, шкатулки и т.д.
 					<br>
 					Традиционные для унцукульских мастеров узоры геометрического и растительного орнамента, сверкающие серебром на темной поверхности полированного с великолепной текстурой дерева, придают изделиям царственную роскошь и благородство.
-				</p>	   			
+				</p>
+				<p class = "catalog-title">Каталог изделий</p>	   			
 	   		</div>   		
 	   	</div> <!-- end row section-intro -->   		
-
-   	</div> <!-- end intro-wrap -->   	
+	</div> <!-- end intro-wrap -->   	
 
    	<div class="row portfolio-content">
    		<div class="col-twelve">
    			<div id="folio-wrap" class="bricks-wrapper">					
+				
 
    				<div class="brick folio-item">
 	               <div class="item-wrap animate-this" data-src="images/samples/uncukul/g/g23.jpg" data-sub-html="#01" > 	
@@ -327,11 +330,8 @@
 								<span class="folio-types">
 									Унцукульские мастера
 								</span>
-								<h3 class="folio-title">23. Ваза декоративная</h3>	     					   
+								<h3 class="folio-title">21. Ваза декоративная</h3>	     					   
 							</div>                                        
-						</a>
-						<a href="https://www.behance.net/" class='details-link' title="details">
-							<i class="icon-link"></i>
 						</a>
 	            	</div> <!-- end item-wrap -->
 						
@@ -352,9 +352,6 @@
 								<h3 class="folio-title">24. Ваза декоративная</h3>  	     					   
 							</div>                                        
 	                  	</a>
-						<a href="https://www.behance.net/" class='details-link' title="details">
-							<i class="icon-link"></i>
-						</a>
 	            	</div> <!-- end item-wrap -->
 
 	               <div id="02" class='hide'>
@@ -371,11 +368,8 @@
 		     					   <span class="folio-types">
 									Унцукульские мастера
 		     					   </span>
-		     					   <h3 class="folio-title">24. Ваза декоративная</h3>
+		     					   <h3 class="folio-title">25. Ваза декоративная</h3>
 		     					</div>                                        
-	                  </a>
-	                  <a href="https://www.behance.net/" class='details-link' title="details">
-	                  	<i class="icon-link"></i>
 	                  </a>
 	               </div> <!-- end item-wrap -->	
 
@@ -396,9 +390,6 @@
 		     					   <h3 class="folio-title">26. Ваза декоративная</h3>
 		     					</div>               
 	                  </a>
-	                  <a href="https://www.behance.net/" class='details-link' title="details">
-	                  	<i class="icon-link"></i>
-	                  </a>
 	               </div> <!-- end item-wrap -->
 
 	               <div id="04" class='hide'>
@@ -418,9 +409,6 @@
 		     					   <h3 class="folio-title">47. Ваза декоративная</h3>
 		     					</div>                                        
 	                  </a>
-	                  <a href="https://www.behance.net/" class='details-link' title="details">
-	                  	<i class="icon-link"></i>
-	                  </a>
 	            	</div> <!-- end item-wrap -->
 
 	               <div id="05" class='hide'>
@@ -439,9 +427,6 @@
 		     					   </span>
 		     					   <h3 class="folio-title">48. Ваза декоративная</h3>
 		     					</div>                                        
-	                  </a>
-	                  <a href="https://www.behance.net/" class='details-link' title="details">
-	                  	<i class="icon-link"></i>
 	                  </a>
 	               </div> <!-- end item-wrap -->
 
