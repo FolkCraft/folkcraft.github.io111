@@ -160,8 +160,20 @@ p.lead {
   font-size: 2rem;
   line-height: 1.8;
   color: #4f4f4f;
-  margin-bottom: 3.6rem;
+  margin-bottom: 3rem;
 }
+
+#lead_portfolio {
+  font-family: "montserrat-regular", sans-serif;
+  font-size: 2rem;
+  line-height: 1.8;
+  color: white;
+
+  background-color: rgba(0, 0, 0, 0.7);
+  
+  padding: 10px;
+}
+
 @media only screen and (max-width: 768px) {
   p.lead {
     font-size: 1.8rem;
@@ -1208,7 +1220,7 @@ input::-moz-focus-inner {
 }
 
 .narrow {
-  max-width: 800px;
+  max-width: 1000px;
 }
 
 .js .animate-this, .js .animate-intro {
@@ -1792,7 +1804,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 
 #about .about-wrap {
-  max-width: 850px;
+  max-width: 1000px;
 }
 
 #about span {
@@ -2022,8 +2034,17 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   padding: 0;
 }
 
+.catalog-title{
+  text-align: center;
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  font-style: normal;
+  font-size: 3rem;
+  margin: 0;
+}
+
 #portfolio .intro-wrap {
-  padding: 15rem 0 21rem;
+  padding: 7rem 0;
   background-color: #151515;
   background-image: url(../images/bg-uncukul.jpg);
   background-repeat: no-repeat;
@@ -2070,10 +2091,10 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 #portfolio .bricks-wrapper .brick {
   float: left;
-  width: 50%;
+  width: 25%;
   padding: 0;
   margin: 0;
-  border: 5px solid #313131;
+  border: 5px solid rgba(0, 0, 0, 0.4)
 }
 #portfolio .bricks-wrapper .brick:nth-child(2n+1) {
   clear: both;
@@ -2100,7 +2121,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 .bricks-wrapper .item-wrap .overlay::before {
   content: "";
   display: block;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.7);
   opacity: 0;
   visibility: hidden;
   position: absolute;
