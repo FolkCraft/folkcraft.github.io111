@@ -25,6 +25,7 @@
    ================================================== -->
 	<script src="js/modernizr.js"></script>
 	<script src="js/pace.min.js"></script>
+	<script src="products.js"></script>
 
    <!-- favicons
 	================================================== -->
@@ -153,13 +154,6 @@
    <!-- about
    ================================================== -->
    <section id="about">
-		<div>
-		<ul>
-			<?php for($i=1;$i<=5;$i++){ ?>
-			<li>Menu Item <?php echo $i; ?></li> 
-			<?php } ?>
-		</ul> 
-		</div>
    	<div class="row about-wrap">
    		<div class="col-full">
 
@@ -319,123 +313,153 @@
 
    	<div class="row portfolio-content">
    		<div class="col-twelve">
-   			<div id="folio-wrap" class="bricks-wrapper">					
-				
+   			<div id="folio-wrap1" class="bricks-wrapper">   					
+				<script>
 
-   				<div class="brick folio-item">
-	               <div class="item-wrap animate-this" data-src="images/samples/uncukul/g/g23.jpg" data-sub-html="#01" > 	
-						<a href="#" class="overlay">
-							<img src="images/samples/uncukul/23.jpg" alt="Skaterboy">	                     
-							<div class="item-text">
-								<span class="folio-types">
-									Унцукульские мастера
-								</span>
-								<h3 class="folio-title">21. Ваза декоративная</h3>	     					   
-							</div>                                        
-						</a>
-	            	</div> <!-- end item-wrap -->
+					var divElement5 = document.getElementById("folio-wrap1")
+
+					for (var i = 0; i < uncukul.length; i++) {
+						var spanElement = document.createElement("span")
+						spanElement.className = "folio-types"
+						spanElement.innerHTML = uncukul[i].type
+
+						var h3Element = document.createElement("h3")
+						h3Element.className = "folio-title"
+						h3Element.innerHTML = uncukul[i].name
+
+						var divElement = document.createElement("div")
+						divElement.className = "item-text"
+						divElement.appendChild(spanElement)
+						divElement.appendChild(h3Element)
+
+						var imgElement = document.createElement("img");
+						imgElement.setAttribute('src', uncukul[i].path);
+						imgElement.setAttribute('alt', uncukul[i].ID);
 						
-					<div id="01" class='hide'>
-						<h4>23. Ваза декоративная</h4>
-						<p>Высота – 120 мм</p>
-					</div>
-	        	</div> <!-- end folio-item -->
+						var aElement = document.createElement("a")
+						aElement.setAttribute('href', "#")
+						aElement.className = "overlay"
+						aElement.appendChild(imgElement)
+						aElement.appendChild(divElement)
 
-	        	<div class="brick folio-item">
-	               <div class="item-wrap animate-this" data-src="images/samples/uncukul/g/g24.jpg" data-sub-html="#02"> 	
-	                  	<a href="#" class="overlay">
-	                  		<img src="images/samples/uncukul/24.jpg" alt="Shutterbug">	                     
-							<div class="item-text">
-								<span class="folio-types">
-										Унцукульские мастера
-								</span>
-								<h3 class="folio-title">24. Ваза декоративная</h3>  	     					   
-							</div>                                        
-	                  	</a>
-	            	</div> <!-- end item-wrap -->
+						var divElement2 = document.createElement("div")
+						divElement2.className = "item-wrap animate-this"
+						divElement2.setAttribute('data-src', uncukul[i].path)
+						divElement2.setAttribute('data-sub-html', "#" + uncukul[i].ID)
+						divElement2.appendChild(aElement)
 
-	               <div id="02" class='hide'>
-							<h4>24. Ваза декоративная</h4>
-							<p>Высота – 110 мм</p>
-					</div>	               
-	        	</div> <!-- end folio-item -->
+						var h4Element = document.createElement("h4")
+						h4Element.innerHTML = uncukul[i].name
 
-	        	<div class="brick folio-item">
-	               <div class="item-wrap animate-this" data-src="images/samples/uncukul/g/g25.jpg" data-sub-html="#03" >   	
-	                  <a href="#" class="overlay">
-	                  	<img src="images/samples/uncukul/25.jpg" alt="Explore">	                     
-	                     <div class="item-text">	                     		     					    
-		     					   <span class="folio-types">
-									Унцукульские мастера
-		     					   </span>
-		     					   <h3 class="folio-title">25. Ваза декоративная</h3>
-		     					</div>                                        
-	                  </a>
-	               </div> <!-- end item-wrap -->	
+						var pElement = document.createElement("p")
+						pElement.innerHTML = uncukul[i].description
 
-	               <div id="03" class='hide'>
-						<h4>25. Ваза декоративная</h4>
-						<p>Высота – 150 мм</p>
-					</div>               
-	        	</div> <!-- end folio-item -->
+						var divElement3 = document.createElement("div")
+						divElement3.id = uncukul[i].ID
+						divElement3.className = "hide"
+						divElement3.appendChild(h4Element)
+						divElement3.appendChild(pElement)
 
-				<div class="brick folio-item">
-	               <div class="item-wrap animate-this"  data-src="images/samples/uncukul/g/g26.jpg"  data-sub-html="#04" >
-	                  <a href="#" class="overlay">
-	                  	<img src="images/samples/uncukul/26.jpg" alt="Minimalismo">	                     
-	                     <div class="item-text">	     					    
-		     					   <span class="folio-types">
-		     					      Унцукульские мастера
-		     					   </span>
-		     					   <h3 class="folio-title">26. Ваза декоративная</h3>
-		     					</div>               
-	                  </a>
-	               </div> <!-- end item-wrap -->
+						var divElement4 = document.createElement("div")
+						divElement4.className = "brick folio-item"
+						divElement4.appendChild(divElement2)
+						divElement4.appendChild(divElement3)
 
-	               <div id="04" class='hide'>
-						<h4>26. Ваза декоративная</h4>
-						<p>Высота - 220 мм</a></p>
-					</div>  	               
-	        	</div> <!-- end folio-item -->
+						divElement5.appendChild(divElement4)
+					}
 
-				<div class="brick folio-item">
-	               <div class="item-wrap animate-this"  data-src="images/samples/uncukul/g/g48.jpg"  data-sub-html="#05" >  	
-	                  <a href="#" class="overlay">
-	                  	<img src="images/samples/uncukul/48.jpg" alt="Bicycle">	                     
-	                     <div class="item-text">	     					    
-		     					   <span class="folio-types">
-									Унцукульские мастера
-		     					   </span>
-		     					   <h3 class="folio-title">47. Ваза декоративная</h3>
-		     					</div>                                        
-	                  </a>
-	            	</div> <!-- end item-wrap -->
+				</script>
+   			</div> <!-- end folio-wrap -->
+   		</div> <!-- end twelve -->
+   	</div> <!-- end portfolio-content -->   	
 
-	               <div id="05" class='hide'>
-						<h4>48. Ваза декоративная</h4>
-						<p>Высота – 150 мм</p>
-					</div>	               
-	        	</div> <!-- end folio-item -->
-	           
-				<div class="brick folio-item">
-	               <div class="item-wrap animate-this"  data-src="images/samples/uncukul/g/g47.jpg"  data-sub-html="#06">     	
-	                  <a href="#" class="overlay">
-	                  	<img src="images/samples/uncukul/47.jpg" alt="Salad">	                     
-	                     <div class="item-text">	     					    
-		     					   <span class="folio-types">
-									Унцукульские мастера
-		     					   </span>
-		     					   <h3 class="folio-title">48. Ваза декоративная</h3>
-		     					</div>                                        
-	                  </a>
-	               </div> <!-- end item-wrap -->
+   </section>  <!-- end portfolio -->
 
-	               <div id="06" class='hide'>
-						<h4>48. Ваза декоративная</h4>
-						<p>Высота – 150 мм</p>
-					</div>	               
-	        	</div> <!-- end folio-item -->   				
+    <section id="portfolio">
+   	
+   	<div class="intro-wrap">
 
+   		<div class="row narrow section-intro with-bottom-sep animate-this">
+	   		<div class="col-twelve" id = "lead_portfolio">
+	   			<h3>Народные художественные промыслы Дагестана</h3>
+		   		<h1>Изделия Унцукульских мастеров</h1>  			
+		   		
+		   		<p class="lead animate-this">
+					Изящество унцукульских вещей скрывает в себе сложность и трудоемкость их изготовления: орнамент возникает из тысяч движений резца и ударов молоточка, вбивающего тончайшие мельхиоровые и серебряные пластинки в твердую, непокорную поверхность кизила, боярышника и абрикоса.
+					<br>
+					Более двухсот лет назад зародился промысел — унцукульская орнаментальная насечка и инкрустация металлом по дереву. Сначала из тростника унцукульцы изготовляли кнутовища, ручки для нагаек, трости. Позже эти изделия стали инкрустировать металлом (медь, серебро, мельхиор), а также костью, рогом, бирюзой.
+					<br>
+					Сейчас для насечки и инкрустации применяется кизиловая, боярышниковая и абрикосовая древесина, которая прочно удерживает кусочки металла.
+					<br>
+					Элементы узора насечки и их сочетания поныне сохранили определенные названия. Линии, исходящие веером из одной точки, называются «птичьим следом», зигзагообразный узор — «улицей» и т. д. Основные элементы орнамента располагаются по окружности, так как в основе рисунка лежит триада — орнаментальный мотив, традиционные композиционные принципы, четко фиксированная, стойкая композиционная структура, получившая название «ишан» (узор).
+					<br>
+					В арсенале унцукульских мастеров: трости, курительные трубки, блюда, декоративные вазы, панно, кувшины, наборы для вина, журнальные столики, письменные приборы, кинжалы, подсвечники, шкатулки и т.д.
+					<br>
+					Традиционные для унцукульских мастеров узоры геометрического и растительного орнамента, сверкающие серебром на темной поверхности полированного с великолепной текстурой дерева, придают изделиям царственную роскошь и благородство.
+				</p>
+				<p class = "catalog-title">Каталог изделий</p>	   			
+	   		</div>   		
+	   	</div> <!-- end row section-intro -->   		
+	</div> <!-- end intro-wrap -->   	
+
+   	<div class="row portfolio-content">
+   		<div class="col-twelve">
+   			<div id="folio-wrap" class="bricks-wrapper">   					
+				<script>
+
+					var divElement5 = document.getElementById("folio-wrap")
+
+					for (var i = 0; i < uncukul.length; i++) {
+						var spanElement = document.createElement("span")
+						spanElement.className = "folio-types"
+						spanElement.innerHTML = uncukul[i].type
+
+						var h3Element = document.createElement("h3")
+						h3Element.className = "folio-title"
+						h3Element.innerHTML = uncukul[i].name
+
+						var divElement = document.createElement("div")
+						divElement.className = "item-text"
+						divElement.appendChild(spanElement)
+						divElement.appendChild(h3Element)
+
+						var imgElement = document.createElement("img");
+						imgElement.setAttribute('src', uncukul[i].path);
+						imgElement.setAttribute('alt', uncukul[i].ID);
+						
+						var aElement = document.createElement("a")
+						aElement.setAttribute('href', "#")
+						aElement.className = "overlay"
+						aElement.appendChild(imgElement)
+						aElement.appendChild(divElement)
+
+						var divElement2 = document.createElement("div")
+						divElement2.className = "item-wrap animate-this"
+						divElement2.setAttribute('data-src', uncukul[i].path)
+						divElement2.setAttribute('data-sub-html', "#" + uncukul[i].ID)
+						divElement2.appendChild(aElement)
+
+						var h4Element = document.createElement("h4")
+						h4Element.innerHTML = uncukul[i].name
+
+						var pElement = document.createElement("p")
+						pElement.innerHTML = uncukul[i].description
+
+						var divElement3 = document.createElement("div")
+						divElement3.id = uncukul[i].ID
+						divElement3.className = "hide"
+						divElement3.appendChild(h4Element)
+						divElement3.appendChild(pElement)
+
+						var divElement4 = document.createElement("div")
+						divElement4.className = "brick folio-item"
+						divElement4.appendChild(divElement2)
+						divElement4.appendChild(divElement3)
+
+						divElement5.appendChild(divElement4)
+					}
+
+				</script>
    			</div> <!-- end folio-wrap -->
    		</div> <!-- end twelve -->
    	</div> <!-- end portfolio-content -->   	
