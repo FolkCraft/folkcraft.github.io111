@@ -68,7 +68,55 @@
 	------------------------------------------------------- */
 	var ssLightGallery = function() {
 
-		$('#folio-wrap').lightGallery({  
+		$('#folio-wrap1').lightGallery({  
+			showThumbByDefault: false,
+			hash: false,
+			selector: ".item-wrap"		
+		});
+
+		$('#folio-wrap2').lightGallery({  
+			showThumbByDefault: false,
+			hash: false,
+			selector: ".item-wrap"		
+		});
+
+		$('#folio-wrap3').lightGallery({  
+			showThumbByDefault: false,
+			hash: false,
+			selector: ".item-wrap"		
+		});
+
+		$('#folio-wrap4').lightGallery({  
+			showThumbByDefault: false,
+			hash: false,
+			selector: ".item-wrap"		
+		});
+
+		$('#folio-wrap5').lightGallery({  
+			showThumbByDefault: false,
+			hash: false,
+			selector: ".item-wrap"		
+		});
+
+		$('#folio-wrap6').lightGallery({  
+			showThumbByDefault: false,
+			hash: false,
+			selector: ".item-wrap"		
+		});
+
+		$('#folio-wrap7').lightGallery({  
+			showThumbByDefault: false,
+			hash: false,
+			selector: ".item-wrap"		
+		});
+
+		$('#folio-wrap8').lightGallery({  
+			showThumbByDefault: false,
+			hash: false,
+			selector: ".item-wrap"		
+		});
+
+		$('#folio-wrap9').lightGallery({  
 			showThumbByDefault: false,
 			hash: false,
 			selector: ".item-wrap"		
